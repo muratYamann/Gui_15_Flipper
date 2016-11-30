@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    <Button
+        android:id="@+id/flip_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Çevir Beni :)" />
+    <ViewFlipper
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="İlk View"
+            android:textColor="#D2691E"
+            android:textStyle="bold"
+            android:textSize="24sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="İkinci View"
+            android:textColor="#006400"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Üçüncü View"
+            android:textColor="#7F25AB"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+    </ViewFlipper>
+
+</LinearLayout>
